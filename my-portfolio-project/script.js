@@ -6,4 +6,5 @@ function aboutMe () {
   this.location = 'Seattle, WA';
   this.work = 'n/a';
   this.hobbies = [];
+  this.travel = [];
 }

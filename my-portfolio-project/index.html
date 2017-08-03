@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>About Me</title>
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
   </head>
   <body>
-  <div id="nav-bar" class="">
-    <div class="">
-      <a href="my-portfolio-project/past-projects">Past Coding Projects</a>
-    </div>
-    <div class="">
-      <a href="my-portfolio-project/travel-spots">Travel Destinations</a>
-    </div>
-    <div class="">
-      <a href="https://www.facebook.com/miyarl">My Facebook page</a>
-    </div>
-    <div class="">
-      <a href="https://github.com/miyaluc">My GitHub page</a>
-    </div>
-  </div>
-  <div class="">
-    <h3>Introduction</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas.</p>
-  </div>
-  <div class="">
-    <h3>Work Experience</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas. Vivamus gravida, elit quis bibendum sagittis, orci odio tempus nunc, id malesuada libero libero eu nisi. Sed eu bibendum erat. Aliquam condimentum ligula ut venenatis pellentesque. Curabitur vitae aliquam leo, at efficitur eros. Aliquam quis orci et felis tempor interdum. Nunc pharetra ante felis, ac vehicula ligula sagittis non. Donec auctor fringilla tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed velit arcu, sollicitudin nec pharetra vitae, tincidunt id lectus.</p>
-  </div>
-  <div class="">
-    <h3>Hobbies</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas. Vivamus gravida, elit quis bibendum sagittis, orci odio tempus nunc, id malesuada libero libero eu nisi. Sed eu bibendum erat. Aliquam condimentum ligula ut venenatis pellentesque. Curabitur vitae aliquam leo, at efficitur eros. Aliquam quis orci et felis tempor interdum. Nunc pharetra ante felis, ac vehicula ligula sagittis non. Donec auctor fringilla tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed velit arcu, sollicitudin nec pharetra vitae, tincidunt id lectus.</p>
-  </div>
-  <div class="">
-    <h3>Education</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas. Vivamus gravida, elit quis bibendum sagittis, orci odio tempus nunc, id malesuada libero libero eu nisi. Sed eu bibendum erat. Aliquam condimentum ligula ut venenatis pellentesque. Curabitur vitae aliquam leo, at efficitur eros. Aliquam quis orci et felis tempor interdum. Nunc pharetra ante felis, ac vehicula ligula sagittis non. Donec auctor fringilla tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed velit arcu, sollicitudin nec pharetra vitae, tincidunt id lectus.</p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
-  <script src="script.js" type="text/javascript"></script>
-  </body>
+    <header class="site-header clearfix">
+  <section class="heading-group-h1">
+    <h1></h1>
+    <h2></h2>
+  </section>
+  <nav class="main-nav">
+    <ul>
+      <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+      <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+      <li><a href="https://www.facebook.com/miyarl" target="_blank" class="FIX-ME">Facebook</a></li>
+      <li><a href="https://github.com/miyaluc" target="_blank" class="icon-github"> GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="articles" class="tab-content">
+    <article class="clearfix" data-category="my-intro">
+      <header>
+        <h1>Introduction</h1>
+      </header>
+      <section class="about-me-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas.</p></section>
+    </article>
+    <article class="clearfix" data-category="work-experience">
+      <header>
+        <h1>Work Experience</h1>
+      </header>
+      <section class="article-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas. Vivamus gravida, elit quis bibendum sagittis, orci odio tempus nunc, id malesuada libero libero eu nisi. Sed eu bibendum erat. Aliquam condimentum ligula ut venenatis pellentesque. Curabitur vitae aliquam leo, at efficitur eros. Aliquam quis orci et felis tempor interdum. Nunc pharetra ante felis, ac vehicula ligula sagittis non. Donec auctor fringilla tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed velit arcu, sollicitudin nec pharetra vitae, tincidunt id lectus.</p></section>
+    </article>
+    <article class="clearfix" data-category="studies">
+      <header>
+        <h1>Education</h1>
+      </header>
+      <section class="article-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. Etiam id ex ut odio facilisis molestie. Suspendisse rhoncus velit eget tellus faucibus, quis lobortis felis dapibus. Donec scelerisque mauris nulla, in consectetur ipsum sollicitudin eget. Praesent dictum mi quis euismod egestas. Vivamus gravida, elit quis bibendum sagittis, orci odio tempus nunc, id malesuada libero libero eu nisi. Sed eu bibendum erat. Aliquam condimentum ligula ut venenatis pellentesque. Curabitur vitae aliquam leo, at efficitur eros. Aliquam quis orci et felis tempor interdum. Nunc pharetra ante felis, ac vehicula ligula sagittis non. Donec auctor fringilla tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed velit arcu, sollicitudin nec pharetra vitae, tincidunt id lectus.</p></section>
+    </article>
+  </section>
+  <section id="about" class="tab-content">
+    <header>
+      Welcome to my Blog
+    </header>
+    <section>
+      <h1>Some of my interests:</h1>
+      <ul>
+        <li>Traveling</li>
+        <li>Reading</li>
+        <li>Learning to Code</li>
+      </ul>
+    </section>
+  </section>
+</main>
+<footer>
+  &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
+</footer>
+</body>
 </html>
