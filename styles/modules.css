@@ -1,5 +1,10 @@
+body {
+  background-image: url("C:/Users/Miya/codefellows/301/my-portfolio-project/my-portfolio-project/images/color spectrum.jpg");
+  /*need to change opacity so that this picture doesn't make it difficult to see words*/
+}
+
 .site-header {
-  background: #FFEAAA;
+  background: #789abc;
 }
 
 .heading-group-h1 {
@@ -12,7 +17,7 @@
 }
 
 .main-nav ul {
-  display: none;
+  display: flex;
   padding: 0;
   list-style: none;
   clear: both;
@@ -23,8 +28,8 @@
 }
 
 .main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
+  margin-right: .2em;
+  font-size: 1.2em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }
@@ -36,13 +41,4 @@
 
 .template {
   display: none;
-}
-
-.byline {
-  color: #777;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
 }
