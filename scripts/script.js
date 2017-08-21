@@ -1,11 +1,9 @@
 'use strict';
+var portfolio = [];
 
-var insights = [];
-
-function AboutMe () {
-  //here is my empty constructor function - I'm not sure what I should include in it at this time
-  this.name = 'Miya Lucas';
-  this.location = 'Seattle, WA';
-  this.work = 'n/a';
-  this.hobbies = [];
+function PastProjects(name, about, screenshot) {
+  ///call it = new PastProject(name, about, screenshot)
+  this.name = name;
+  this.about = about;
+  this.screenShot = screenshot;
 }
