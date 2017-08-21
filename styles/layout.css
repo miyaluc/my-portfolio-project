@@ -27,6 +27,10 @@
   margin: .2em 5%;
 }
 
+.icon-home, .icon-address-book, .FIX-ME, .icon-github, .travel {
+  padding: 50%;
+}
+
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
