@@ -7,3 +7,7 @@ function PastProjects(name, about, screenshot) {
   this.about = about;
   this.screenShot = screenshot;
 }
+
+var youDontKnowJack = new PastProjects('You Don\t Know Jack', 'A Game that Tests Your Knowledge of Everyday Trivia', '');
+var busMall = new PastProjects('Bus Mall', 'Your Online Bus Retailer', '');
+var chocolatePizza = new PastProjects('Chocolate Pizza', 'A Chocolate Pizza Recipe', '');
