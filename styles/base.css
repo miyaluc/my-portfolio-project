@@ -1,3 +1,8 @@
+img {
+  width: 10em;
+  max-width: 100%;
+}
+
 body {
   line-height: 1.5;
   font-size: 100%;
@@ -9,7 +14,11 @@ hr {
   width: 80%;
 }
 
-/*TEXT STYLES START HERE*/
+header {
+  background-color: #21a1af;
+}
+/*TEXT STYLES
+=======================================*/
 p {
   font-size: 1em;
 }
@@ -18,9 +27,11 @@ address {
   display: inline-block;
 }
 
-/*LINK STYLES START HERE*/
+/*LINK STYLES
+=======================================*/
+
 a, a:link, a:active {
-text-decoration: none;
+  text-decoration: none;
   color: #777;
 }
 
@@ -29,5 +40,4 @@ a:hover, a:focus {
 }
 
 a:visited {
-
 }

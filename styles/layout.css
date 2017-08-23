@@ -1,3 +1,9 @@
+#tulips {
+  margin-left: 25%;
+  length: 2%;
+  /*need to figure out a way to shrink this picture and possibly move it to another page*/
+}
+
 .pull-left {
   float: left;
 }
@@ -12,13 +18,17 @@
   clear: both;
 }
 
-heading-group-h1 {
+.heading-group-h1 {
   max-width: 80%;
 }
 
 #filters select {
   width: 90%;
   margin: .2em 5%;
+}
+
+.icon-home, .icon-address-book, .FIX-ME, .icon-github, .travel {
+  padding: 50%;
 }
 
 @media only screen and (min-width: 640px) {
