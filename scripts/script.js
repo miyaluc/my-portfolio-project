@@ -10,13 +10,10 @@ function PastProjects(rawData) {
 }
 
 //adding all past projects to the DOM
-PastProjects.prototype.displayProject = function() {
-  var $pastProjects = $('section.template').clone();
-  $pastProjects.find('h2').text(this.name);
-  $pastProjects.find('img.project-images').attr('src', this.image);
-  $pastProjects.find('p.project-description').text(this.about);
-  $pastProjects.removeClass('template');
-  return $pastProjects;
+PastProjects.prototype.toHtml = function() {
+  var source = $('#entry-template').html();
+  var template = Handlebars.compile(source);
+  return template(this);
 }
 
 rawData.sort(function(a,b) {
@@ -27,8 +24,9 @@ rawData.forEach(function(project) {
   portfolio.push(new PastProjects(project));
 });
 
-portfolio.forEach(function(project){
-  $('.projects').append(project.displayProject());
+portfolio.map(function(project){
+  // $('.projects').append(project.displayProject());
+  $('#handlebars-entry').append(project.toHtml());
 });
 
 function handleNavBar() {
@@ -55,7 +53,7 @@ headerActions.hideMenu = function() {
   $('#nav').on('click', '.hide-menu', function(e) {
     e.preventDefault();
     $('ul').fadeOut();
-    $('.hamburger-icon').text('Show Menu').attr('class', 'show-menu');
+    // $('.hamburger-icon').text('Show Menu').attr('class', 'show-menu');
   });
 }
 
