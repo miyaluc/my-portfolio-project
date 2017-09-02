@@ -2,7 +2,7 @@
 var portfolio = [];
 
 //here is my project constructor
-function PastProjects(name, about, screenshot) {
+function PastProjects(rawData) {
   ///call it = new PastProject(name, about, screenshot)
   this.name = rawData.name;
   this.about = rawData.about;
@@ -13,7 +13,7 @@ function PastProjects(name, about, screenshot) {
 PastProjects.prototype.displayProject = function() {
   var $pastProjects = $('section.template').clone();
   $pastProjects.find('h2').text(this.name);
-  $pastProjects.find('img').attr('src', this.image);
+  $pastProjects.find('img.project-images').attr('src', this.image);
   $pastProjects.find('p.project-description').text(this.about);
   $pastProjects.removeClass('template');
   return $pastProjects;
@@ -31,9 +31,17 @@ portfolio.forEach(function(project){
   $('.projects').append(project.displayProject());
 });
 
+function handleNavBar() {
+  $('li').on('click', function() {
+    $('.articles').hide();
+    var dataContent = $(this).attr('data-content');
+    console.log(dataContent);
+  });
+};
+
 var headerActions = {};
 
-//this is what I'll use to show my menu icon
+// this is what I'll use to show my menu icon
 headerActions.displayMenu = function() {
   $('#nav').on('click', '.show-menu', function(e) {
     e.preventDefault();
@@ -47,7 +55,7 @@ headerActions.hideMenu = function() {
   $('#nav').on('click', '.hide-menu', function(e) {
     e.preventDefault();
     $('ul').fadeOut();
-    $('.hamburger-icon'.text('Show Menu').attr('class', 'show-menu');
+    $('.hamburger-icon').text('Show Menu').attr('class', 'show-menu');
   });
 }
 

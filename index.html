@@ -15,14 +15,12 @@
     <div id="header" class="site-header clearfix">
       <section class="heading-group-h1">
         <h1>Miya's Portfolio</h1>
-        <h2>Coding Bootcamp: Scorch Trials</h2>
+        <h3>Coding Bootcamp: Scorch Trials</h3>
       </section>
       <nav class="main-nav" id="nav">
-    <div class="hamburger-icon">
-      &#9776; </div>
     <ul>
-      <li class="tab" data-content="articles"><a href="index.html" class="icon-home">Home</a></li>
-      <li class="tab" data-content="past-projects"><a href="#" class="past-projects.html">Projects</a></li>
+      <li class="tab" data-content="about-me"><a class="pull-left">About Me</a></li>
+      <li class="tab" data-content="projects"><a class="past-projects.html" class="pull-left">Projects</a></li>
       <li><a href="https://www.facebook.com/miyarl" target="_blank" class="tab">Facebook</a></li>
       <li><a href="https://github.com/miyaluc" target="_blank" class="tab">GitHub</a></li>
       <!-- <li><a href="travel-spots.html" class="travel">Travel</a></li> -->
@@ -33,7 +31,7 @@
     <img src="images\tulip photo.jpg" class="">
 </div>
 <main>
-  <section id="articles" class="tab-content">
+  <section class="articles" class="tab-content" id="about-me">
     <article class="clearfix" data-category="my-intro">
       <header>
         <h1>Introduction</h1>
@@ -62,13 +60,13 @@
       <section class="article-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at lectus sit amet libero laoreet iaculis in non sapien. Cras tristique neque quam, aliquam ultricies diam viverra et. Aliquam erat volutpat. </p>
       </section>
     </article>
-    <article class="clearfix" data-category="past-projects">
+    <article id="articles" data-category="past-projects">
         <div class="projects-completed">
           <section class="template">
-            <div class="project">
-              <h2 class="my-projects-header"></h2>
-              <img src="" class="project-images">
-              <p class="project-description"></p>
+            <div class="projects">
+              <h2 class="my-projects-header">We Don\'t Know Jack</h2>
+              <img src="images\blue-question-mark.png" class="project-images">
+              <p class="project-description">A Game that Tests Your Knowledge of Everyday Trivia</p>
               <p class=""></p>
             </div>
           </section>
@@ -83,7 +81,15 @@
   &copy; 2017 Code Fellows | Static Blog | CodeFellows 301 Portfolio!
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
-<script src = "projects.js" type="text/javascript"></script>
-<script src="script.js" type="text/javascript"></script>
+<script src = "scripts/projects.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
 </body>
+<script type="text/javascript">
+  $('li').on('click', function() {
+    $('.articles').hide();
+    var dataContent = $(this).attr('data-content');
+    console.log(dataContent);
+    $('#' + dataContent).show();
+  });
+</script>
 </html>
